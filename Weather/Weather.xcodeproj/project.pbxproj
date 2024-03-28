@@ -21,6 +21,7 @@
 		E8962C4F2BB5625B0022A4D4 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8962C4E2BB5625B0022A4D4 /* City.swift */; };
 		E8962C522BB56CC80022A4D4 /* CityWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8962C512BB56CC80022A4D4 /* CityWeatherView.swift */; };
 		E8962C542BB56F1E0022A4D4 /* CityWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8962C532BB56F1E0022A4D4 /* CityWeatherViewModel.swift */; };
+		E8962C572BB59BAA0022A4D4 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8962C562BB59BAA0022A4D4 /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		E8962C4E2BB5625B0022A4D4 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		E8962C512BB56CC80022A4D4 /* CityWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherView.swift; sourceTree = "<group>"; };
 		E8962C532BB56F1E0022A4D4 /* CityWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherViewModel.swift; sourceTree = "<group>"; };
+		E8962C562BB59BAA0022A4D4 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		E8962C3C2BB4617B0022A4D4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E8962C552BB59B9A0022A4D4 /* Weather */,
 				E8962C462BB559080022A4D4 /* SearchCity */,
 				E8962C3F2BB465FE0022A4D4 /* Location */,
 			);
@@ -202,6 +205,14 @@
 				E8962C532BB56F1E0022A4D4 /* CityWeatherViewModel.swift */,
 			);
 			path = CityWeather;
+			sourceTree = "<group>";
+		};
+		E8962C552BB59B9A0022A4D4 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				E8962C562BB59BAA0022A4D4 /* WeatherService.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8962C572BB59BAA0022A4D4 /* WeatherService.swift in Sources */,
 				E8962C4D2BB55EF10022A4D4 /* CitySelectionViewModel.swift in Sources */,
 				E8962C412BB4662C0022A4D4 /* LocationServiceProtocol.swift in Sources */,
 				E8962C482BB559350022A4D4 /* SearchCityService.swift in Sources */,

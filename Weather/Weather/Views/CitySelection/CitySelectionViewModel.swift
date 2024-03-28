@@ -12,7 +12,6 @@ import Combine
 final class CitySelectionViewModel: ObservableObject {
     private var cancellable: AnyCancellable?
 
-    lazy var locationService = LocationService()
     lazy var searchCityService = SearchCityService()
     
     @Published var cityNameQuery = "" {
@@ -27,7 +26,5 @@ final class CitySelectionViewModel: ObservableObject {
         cancellable = searchCityService.localSearchPublisher.sink { mapItems in
             self.citiesList = mapItems.map({ City(mapItem: $0) })
         }
-        
-        locationService.updateLocation { _ in }
     }
 }
